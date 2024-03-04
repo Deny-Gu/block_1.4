@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'TT Lakes', sans-serif;
+}
+
+.mobile-menu {
+    width: 320px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    overflow: auto;
+    -webkit-box-shadow: 6px 0px 23px 6px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 6px 0px 23px 6px rgba(34, 60, 80, 0.2);
+    box-shadow: 6px 0px 23px 6px rgba(34, 60, 80, 0.2);
+}
+
+.mobile-menu__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-menu__left-block {
+    margin-left: 24px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.mobile-menu__right-block {
+    margin-right: 24px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.mobile-menu__button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 100%;
+    background-color: #FF3E79;
+    transition: filter 0.5s ease-in-out;
+}
+
+.mobile-menu__button:hover {
+    filter: grayscale(40%);
+}
+
+.mobile-menu__button img {
+    vertical-align: middle;
+}
+
+.mobile-menu__navigate {
+    height: 100%;
+}
+
+.mobile-menu__list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+.mobile-menu__item {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    margin: 12px 24px;
+}
+
+.mobile-menu__item a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.5s ease-in-out;
+}
+
+.mobile-menu__item a:hover {
+    color: #FF3E79;
+}
+
+.mobile-menu__item_active a, .mobile-menu__item_active a:hover {
+    color: #7E7E82;
+    transition: none;
+}
+
+.mobile-menu__item_active::before {
+    content: "";
+    height: 28px;
+    border: 8px solid #41F6D7;
+    border-radius: 5px;
+    vertical-align: middle;
+    margin-left: -36px;
+    margin-right: 20px;
+}
+
+.mobile-menu__footer-nav {
+    display: flex;
+    gap: 16px;
+    margin: 24px 24px 16px 24px;
+}
+
+.mobile-menu__email {
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 24px;
+    margin-bottom: 16px;
+}
+
+.mobile-menu__phone {
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 24px;
+    margin-bottom: 40px;
+}
+
+.mobile-menu__lang {
+    margin-left: 24px;
+    margin-bottom: 32px;
+}
+
+.mobile-menu__lang a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    margin-right: 5px;
+    transition: color 0.5s ease-in-out;
+}
+
+.mobile-menu__lang a:hover {
+    color: #FF3E79;
+}
